@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumberGame</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="jquery-3.5.1.js"></script>
+  </head>
+  <style></style>
+  <body>
+    <table class="container">
+      <tr class="row1">
+        <td class="c1-container">
+          <div id="c1-front" class="front"></div>
+          <div id="c1-back" class="back"></div>
+        </td>
+        <td class="c2-container">
+          <div id="c2-front" class="front"></div>
+          <div id="c2-back" class="back"></div>
+        </td>
+        <td class="c3-container">
+          <div id="c3-front" class="front"></div>
+          <div id="c3-back" class="back"></div>
+        </td>
+        <td class="c4-container">
+          <div id="c4-front" class="front"></div>
+          <div id="c4-back" class="back"></div>
+        </td>
+        <td class="c5-container">
+          <div id="c5-front" class="front"></div>
+          <div id="c5-back" class="back"></div>
+        </td>
+      </tr>
+      <tr class="row2">
+        <td class="c6-container">
+          <div id="c6-front" class="front"></div>
+          <div id="c6-back" class="back"></div>
+        </td>
+        <td class="c7-container">
+          <div id="c7-front" class="front"></div>
+          <div id="c7-back" class="back"></div>
+        </td>
+        <td class="c8-container">
+          <div id="c8-front" class="front"></div>
+          <div id="c8-back" class="back"></div>
+        </td>
+        <td class="c9-container">
+          <div id="c9-front" class="front"></div>
+          <div id="c9-back" class="back"></div>
+        </td>
+        <td class="c10-container">
+          <div id="c10-front" class="front"></div>
+          <div id="c10-back" class="back"></div>
+        </td>
+      </tr>
+      <tr class="row3">
+        <td class="c11-container">
+          <div id="c11-front" class="front"></div>
+          <div id="c11-back" class="back"></div>
+        </td>
+        <td class="c12-container">
+          <div id="c12-front" class="front"></div>
+          <div id="c12-back" class="back"></div>
+        </td>
+        <td class="c13-container">
+          <div id="c13-front" class="front"></div>
+          <div id="c13-back" class="back"></div>
+        </td>
+        <td class="c14-container">
+          <div id="c14-front" class="front"></div>
+          <div id="c14-back" class="back"></div>
+        </td>
+        <td class="c15-container">
+          <div id="c15-front" class="front"></div>
+          <div id="c15-back" class="back"></div>
+        </td>
+      </tr>
+      <tr class="row4">
+        <td class="c16-container">
+          <div id="c16-front" class="front"></div>
+          <div id="c16-back" class="back"></div>
+        </td>
+        <td class="c17-container">
+          <div id="c17-front" class="front"></div>
+          <div id="c17-back" class="back"></div>
+        </td>
+        <td class="c18-container">
+          <div id="c18-front" class="front"></div>
+          <div id="c18-back" class="back"></div>
+        </td>
+        <td class="c19-container">
+          <div id="c19-front" class="front"></div>
+          <div id="c19-back" class="back"></div>
+        </td>
+        <td class="c20-container">
+          <div id="c20-front" class="front"></div>
+          <div id="c20-back" class="back"></div>
+        </td>
+      </tr>
+      <tr class="row5">
+        <td class="c21-container">
+          <div id="c21-front" class="front"></div>
+          <div id="c21-back" class="back"></div>
+        </td>
+        <td class="c22-container">
+          <div id="c22-front" class="front"></div>
+          <div id="c22-back" class="back"></div>
+        </td>
+        <td class="c23-container">
+          <div id="c23-front" class="front"></div>
+          <div id="c23-back" class="back"></div>
+        </td>
+        <td class="c24-container">
+          <div id="c24-front" class="front"></div>
+          <div id="c24-back" class="back"></div>
+        </td>
+        <td class="c25-container">
+          <div id="c25-front" class="front"></div>
+          <div id="c25-back" class="back"></div>
+        </td>
+        <div class="textElements">
+          <p id="score">Score:</p>
+          <span id="display">0</span>
+          <p id="attemptsLeft">Attempts Left:</p>
+          <span id="attempts">5</span>
+        </div>
+        <div class="buttons">
+          <button id="stop">STOP</button>
+          <button id="restart">Restart?</button>
+        </div>
+      </tr>
+    </table>
+
+    <h1 class="roundNumber">Round 1</h1>
+    <div class="Directions">
+      <h1 id="directionsHeading">Directions</h1>
+      <ul class="ScoringSystem">
+        <li>5 matching numbers: +100 points (+total added number)</li>
+        <li>5 consecutive numbers: +80 points (+total added number)</li>
+        <li>4 matching numbers: +50 points (+total added number)</li>
+        <li>3 matching numbers: +20 points (+total added number)</li>
+        <br />
+        <br />
+        <li>No wins: -25 points (+total added number)</li>
+      </ul>
+      <p>
+        <em
+          >After each round, all numbers shown are added to your score
+          regardless of whether you have any wins that round</em
+        >
+      </p>
+      <br />
+      <p>**The game will always end after the fifth round**</p>
+      <p>
+        Click on the stop button to skip the current round (no points will be
+        added or lost that round)
+      </p>
+      <p>Click on the restart button to restart the game</p>
+      <script src="game.js"></script>
+    </div>
+  </body>
+</html>

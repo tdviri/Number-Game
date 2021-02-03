@@ -1,0 +1,182 @@
+:root {
+  background: rgb(172, 172, 179);
+  background: radial-gradient(
+    circle,
+    rgb(171, 171, 228) 0%,
+    rgb(62, 4, 88) 90%
+  );
+}
+
+table {
+  height: 350px;
+  width: 400px;
+  border: 2px solid rgb(94, 6, 116);
+  background-color: rgb(16, 139, 127);
+  text-align: center;
+  outline: 2px solid rgb(15, 74, 150);
+  position: absolute;
+  top: 50%;
+  margin-top: -175px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.row1 {
+  animation: moveHz 2s 1;
+  animation-timing-function: ease-in-out;
+}
+.row2 {
+  animation: moveHz 2s 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+}
+.row3 {
+  animation: moveHz 2s 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.75s;
+}
+.row4 {
+  animation: moveHz 2s 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+.row5 {
+  animation: moveHz 2s 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.25s;
+}
+
+@keyframes moveHz {
+  0% {
+    transform: translateX(-310px);
+    opacity: 0.1;
+  }
+}
+
+td:hover {
+  background-color: rgb(19, 141, 129);
+}
+
+#restart:hover {
+  background: rgb(63, 233, 176);
+  cursor: pointer;
+}
+#stop:hover {
+  cursor: pointer;
+}
+
+td {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(216, 186, 141);
+}
+.front,
+.back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+}
+.front {
+  background-color: rgb(139, 21, 21);
+  transform: rotateY(180deg);
+}
+.back {
+  background-color: black;
+}
+
+td:hover .back {
+  background-color: rgb(207, 171, 10);
+  cursor: pointer;
+}
+
+.textElements {
+  position: relative;
+  left: 65%;
+  top: 50px;
+}
+
+#restart {
+  background-color: rgb(201, 167, 127);
+  color: rgb(1, 27, 24);
+}
+#stop {
+  background: rgb(155, 16, 16);
+  color: rgb(201, 178, 178);
+  margin-right: 175px;
+}
+
+.buttons {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+
+.roundNumber {
+  display: flex;
+  justify-content: center;
+}
+
+.textElements {
+  color: rgb(163, 161, 10);
+  position: absolute;
+  top: 25%;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+#score {
+  display: inline;
+  font-size: larger;
+}
+
+#display {
+  display: inline;
+  position: absolute;
+  margin-left: 15%;
+  font-size: larger;
+}
+
+#attempts {
+  position: absolute;
+  bottom: 19px;
+  left: 128px;
+}
+
+@media screen and (max-width: 1535px) {
+  .textElements {
+    position: absolute;
+    top: 80%;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+  }
+  #stop {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .Directions {
+    display: none;
+  }
+}
+
+.Directions {
+  width: 300px;
+  margin-left: 30px;
+}
+
+#directionsHeading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
