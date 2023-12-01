@@ -1,14 +1,27 @@
-# Number-Game
-Arithmetic game using JavaScript, HTML, CSS, and jQuery
+# Hidden Numbers
 
+An intriguing arithmetic game developed using JavaScript, jQuery, HTML, and CSS.
 
-The user will be shown a table of 25 cells, each assigned with a hidden random number from 1-9. The user's goal is to click on the cells that he/she thinks will
-earn them the most points. However, there is no real way of knowing, as this is a game of luck. There are a total of five rounds in the game, and after each round, the user
-earns a certain number of points depending on which numbers he/she recieved that round. After each round, if all 5 numbers match, a total of 100 points are added to the total score. 
-If the numbers are consecutive numbers, then 80 points are added. If 4 of the numbers match, then 50 points are added. If 3 of the numbers match, then 20 points are added. If
-there are no consecutive numbers or matches, then 25 points are deducted from the total score. Regardless of whether there are any wins that round or not, all of the numbers from
-that round are added up and added to the total score. 
-The user also has the choice to "stop", or skip the current round and advance to the next one. In this case, no points are added or lost that round. However, this may also
-cause the user to miss out on a win, as the game will end at five rounds anyway. This is where the user has to take into consideration both luck and risk.
+## Gameplay
+
+- The user is presented with a table of 25 cells, each containing a hidden random number from 1 to 9.
+- The objective is to click on cells that the user believes will result in the highest points, making it a game of chance.
+- The game spans five rounds, with points awarded based on the received numbers.
+- Points Calculation:
+  - If all 5 numbers match, 100 points are added.
+  - For consecutive numbers, 80 points are added.
+  - Matching 4 numbers adds 50 points.
+  - Matching 3 numbers adds 20 points.
+  - No consecutive numbers or matches result in a deduction of 25 points.
+- After each round, the total score is updated.
+- The user can choose to "stop" and advance to the next round, forgoing points for that round.
+- The game concludes after five rounds, and the final score is displayed.
+
+## Strategy
+
+- Players must balance luck and risk, deciding when to stop or continue to maximize scores.
+
+Embark on a journey of hidden numbers, where chance and strategic choices shape your destiny!
+
 
 
